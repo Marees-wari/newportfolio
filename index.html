@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpeg" class="logo">
+                <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contactme">Resume/Contact</a></li>
+            </ul>
+            </nav>
+        </div>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Mareeswari</span><br>from Sattur</h1>
+        </div>
+    </div>
+    <!-- ------------------------about--------------------------------------- -->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutcol1">
+                    <img src="images/fullpro.jpeg" alt="" height="30%">
+                </div>
+                <div class="aboutcol2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hello! I'm Mareeswari, a passionate and highly motivated MCA graduate, I possess a strong foundation in computer science and programming. With a solid academic background and a curiosity for innovation, I've developed a versatile skill set that spans programming languages, data structures and software engineering. My expertise includes Java, Python, PHP, SQL and with a keen interest in Web Development. With excellent problem-solving skills and experience working on group projects, I am confident in my ability to contribute to a dynamic organization. I am eager to launch my career in software development and learn from experienced professionals. I am a quick learner, a team player, and a passionate individual with a strong work ethic.</p>
+                    <br>
+                    <p>In this portfolio, I've showcased some of my achievements and my notable projects, demonstrating my capabilities and creativity.</p>
+                    
+                    <div class="tabtitle">
+                        <p class="tablinks activelinks" onclick="opentab('Education')">Education</p>
+                        <p class="tablinks activelinks" onclick="opentab('Certification')">Certification</p>
+                        <p class="tablinks activelinks" onclick="opentab('Participation')">Participation</p>
+                    </div>
+                    <div class="tabcontents activetab" id="Education">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Pursing MCA at SFR, Sivakasi</li>
+                            <li><span>2020 - 2023</span><br>BSC from SFR, Sivakasi</li>
+                            <li><span>2018 - 2020</span><br>HSE from KMT, Sattur</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="Certification">
+                        <ul>
+                            <li><span>2023 - 2024</span><br>Certification in Financial Accounting from SFR College</li>
+                            <li><span>2022 - 2023</span><br>Certification in Cyber Attacks and Security from SFR College</li>
+                            <li><span>2021 - 2022</span><br>Diplomo in Animation Technology from SFR College</li>
+                            <li><span>2020 - 2021</span><br>Certification in Animation Technology from SFR College</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="Participation">
+                        <ul>
+                            <li>Won <span>1st Prize in Design Dazzle event </span>held by ANJAC College</li>
+                            <li>Participated in <span>Intra Hackathon</span> held by SFR College</li>
+                            <li>Won <span>2nd Prize in Essay Writing </span> held by SFR College</li>
+                            <li>Participated in <span>Shadow Script Event </span> held by ANJAC College</li>
+                            <li>Participated in <span>Collage Making Event </span> held by Vaigai Illaikiya Thiruvila 2024</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+     </div>
+<script>
+    var tablink=document.getElementsByClassName("tablinks");
+    var tabcontent=document.getElementsByClassName("tabcontents");
+    function opentab(tabname)
+    {
+        for(tabli of tablink){
+            tabli.classList.remove("activelinks");
+        }
+        for(tabco of tabcontent){
+            tabco.classList.remove("activetab");
+        }
+        event.currentTarget.classList.add("activelinks");
+        document.getElementById(tabname).classList.add("activetab");
+    }
+</script>
+<!-- -----------------------------------------------skills------------------------------------------ -->
+ <div id="skill">
+ <div class="inner">
+    <div class="header">
+        <h1>My Skills</h1>
+    </div>
+    <div class="containers">
+        <div class="skillbox">
+            <div class="skilltitle">
+                <div class="img">
+                    <img src="images/html.jpg">
+                </div>
+                <h3>HTML</h3>
+            </div>
+            <ul>
+                <li>🔻Proficient in writing clean, semantic, and valid HTML code</li>
+                <li>🔻Experienced in creating responsive, and accessible web pages</li>
+                <li>🔻Skilled in structuring and organizing content using HTML elements (headings, paragraphs, lists, etc.)</li>
+            </ul>
+        </div>
+        <div class="skillbox">
+            <div class="skilltitle">
+                <div class="img">
+                    <img src="images/css.jpg">
+                </div>
+                <h3>CSS</h3>
+            </div>
+            <ul>
+                <li>🔻Expertise in CSS3, including selectors, properties, and values</li>
+                <li>🔻Proficient in creating responsive, mobile-friendly designs</li>
+                <li>🔻Knowledgeable in CSS best practices, including accessibility and performance optimization</li>
+            </ul>
+        </div>
+        <div class="skillbox">
+            <div class="skilltitle">
+                <div class="img">
+                    <img src="images/java.jpg">
+                </div>
+                <h3>JAVA</h3>
+            </div>
+            <ul>
+                <li>🔻Skilled in Java-based technologies such as Java Servlet, JavaServer Pages (JSP) and Java Beans</li>
+                <li>🔻Knowledgeable in Java multithreading, inheritance ,packages etc</li>
+                <li>🔻Experienced in using Java-based tools such as Netbeans</li>
+            </ul>
+        </div>
+        <div class="skillbox">
+            <div class="skilltitle">
+                <div class="img">
+                    <img src="images/python.jpg">
+                </div>
+                <h3>PYTHON</h3>
+            </div>
+            <ul>
+                <li>🔻Familiarity with Python syntax and data types</li>
+                <li>🔻Understanding of control structures, functions, and modules</li>
+                <li>🔻Knowledge of basic data structures such as lists, tuples, and dictionaries</li>
+            </ul>
+        </div>
+        <div class="skillbox">
+            <div class="skilltitle">
+                <div class="img">
+                    <img src="images/php.jpg">
+                </div>
+                <h3>PHP</h3>
+            </div>
+            <ul>
+                <li>🔻Integrating PHP with other technologies such as JavaScript and HTML/CSS</li>
+                <li>🔻Experienced in database integration and management</li>
+                <li>🔻Skilled in building dynamic and scalable web applications</li>
+            </ul>
+        </div>
+        <div class="skillbox">
+            <div class="skilltitle">
+                <div class="img">
+                    <img src="images/mongo db.jpg">
+                </div>
+                <h3>MONGO DB</h3>
+            </div>
+            <ul>
+                <li>🔻 and implementing scalable and efficient MongoDB databases</li>
+                <li>🔻Developing and optimizing MongoDB queries and data models</li>
+                <li>🔻Learnt about hive and pig</li>
+            </ul>
+        </div>
+    </div>
+ </div>
+</div>
+ <!-- --------------------------------------Projects------------------------------------- -->
+  <div id="project">
+  <div class="projectsection">
+    <h1>My Projects and Internships</h1>
+ 
+  <div class="projects">
+    <div class="probox"> 
+                <div class="proimg">
+                    <img src="images/soil1.jpg">
+                    <div class="procontent">
+                    <h2>Soil Analysis and Crop Recommendations using Machine Learning</h2><br>
+                    <p>I developed a machine learning-based system in Python to analyze soil characteristics and provide personalized crop recommendations to farmers. The project aimed to improve crop yields, reduce soil degradation, and promote sustainable agriculture practices. I collected and preprocessed a dataset of soil samples, and implemented machine learning algorithms such as Random Forest, Naive Bayes, Decision Trees and Support Vector Machine (SVM) to predict optimal crop recommendations. I also utilized techniques like feature scaling, normalization, and cross-validation to optimize model performance. I achievied an accuracy of 90% in predicting optimal crop recommendations.</p>
+                    </div>
+                 </div>
+    </div>
+         <div class="probox">
+                <div class="proimg">
+                    <img src="images/token.jpg">
+                    <div class="procontent">
+                        <h2>Internship on Block Token Creation</h2><br>
+                        <h4>Company Name : VJ SoftTech</h4>
+                        <h4>Duration     : 15 days</h4>
+                        <p>As a blockchain development intern, I worked on creating the BNB token, a custom blockchain token built on Ethereum. I researched and implemented Ethereum's ERC-20 standard for token creation. I designed and developed the BNB token's smart contract using Solidity. I deployed the BNB token on Ethereum testnet and mainnet. I tested and debugged the BNB token's functionality. I collaborated with the development team to integrate the BNB token with other blockchain-based applications. I gained experience with blockchain development, smart contract development, and token creation. I successfully created and deployed the BNB token on Ethereum. This experience helped me develop my skills in blockchain development and token creation.</p>
+                    </div>
+                </div>
+        </div>
+         <div class="probox">
+                <div class="proimg">
+                    <img src="images/firework.jpg">
+                <div class="procontent">
+                    <h2>Internship on Website Designing</h2><br>
+                    <h4>Company Name : Sanyu Infotech</h4>
+                    <h4>Duration     : 15 days</h4>
+                    <p>During my internship, I gained hands-on experience with web development technologies. I worked on the Fireworks website, creating a user-friendly and visually appealing design. I contributed to showcasing fireworks displays and events on the website. I collaborated with the team to identify and resolve technical issues and implemented new features to enhance the Fireworks website's functionality. I developed my skills in web development and teamwork, utilizing HTML, CSS, and JavaScript to create a responsive website design. This experience helped me gain valuable skills in web development and project management.</p>
+                </div>
+                </div>
+         </div>
+  </div>
+</div>
+</div>
+<!-- ---------------------------------------------resume---------------------------------------------------- -->
+ <div id="contactme">
+ <div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contactleft">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>m.mareeswari@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>6374445889</p>
+                <div class="socialicons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="#" download class="btn btn2">Download CV</a>
+             </div>
+            <div class="contactright">
+                <form>
+                    <input type="text" name="Name"placeholder="Your Name" required><br>
+                    <input type="email" name="Email"placeholder="Your Email" required><br>
+                    <textarea name="Message" rows="5" placeholder="Your Message"></textarea><br>
+                    <button type="submit" class="btn btn3">Submit</button>
+                    <br>
+                    <br>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©Mareeswari [2024]. ❤️All rights reserved.</p>
+        </div>
+    </div>
+ </div>
+</div>
+</body>
+</html>

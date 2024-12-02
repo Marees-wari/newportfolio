@@ -1,0 +1,319 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color:white;
+}
+#header
+{
+    width:100%;
+    height:100vh;
+    background-image: url("images/halfpro.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:right; 
+    background-color:rgb(13, 13, 13);
+}
+.logo{
+    width:400px;
+    height:100px;
+    margin-top:10px;
+}
+nav{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin:10px 40px;
+}
+nav ul li a{
+    font-size:30px;
+    color:white;
+    font-weight: 100px;
+    text-decoration: none;
+    position:relative;
+}
+nav ul li a::after{
+    content:'';
+    width:0;
+    height:3px;
+    background:red;
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    transition:0.5s;
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+.header-text h1{
+    margin-top:17%;
+    font-size:70px;
+    margin-left:20%;
+}
+.header-text h1 span{
+    color:red;
+    font-family:Segoe print;
+}
+/* ------------------------about-------------------------------- */
+#about{
+    padding:90px 0;
+    
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size:20px;
+}
+.aboutcol1{
+    padding-left:8%;
+    flex-basis: 30%;
+}
+.aboutcol1 img{
+    width:100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.aboutcol2{
+    margin-left:3%;
+    flex-basis:65%;
+}
+.aboutcol2 p{
+    font-family:Geneva;
+    font-size:20px;
+    margin-right:10%;
+}
+.subtitle{
+    font-family:Segoe Print;
+    font-size:35px;
+    color:white;
+}
+.tabtitle{
+    display:flex;
+    margin:20px 0 50px;  
+}
+.tabtitle p{
+    font-family:Segoe print;
+    font-size:25px;
+    cursor:pointer;
+}
+.tablinks{
+    position: relative;
+}
+.tablinks::after{
+    content:'';
+    width:0;
+    height:3px;
+    background:red;
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    transition:0.5s;
+}
+.tablinks:hover::after{
+    width:100%;
+}
+.tabcontents ul li {
+    list-style-type: none;
+    margin:10px 0;
+}
+.tabcontents ul li span{
+    color:#b54769;
+    font-size: 23px;
+}
+.tabcontents{
+    display:none;
+}
+.tabcontents.activetab{
+    display:block;
+}
+/* ---------------------------skills------------------------------------ */
+.inner{
+    padding-top: 30px;
+}
+.header h1{
+    text-align: center;
+    font-family: segoe print;
+    font-size:35px;
+}
+.containers{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap:1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+.skillbox ul li{
+    list-style-type: none;
+    font-size: 15px;
+}
+.skilltitle img{
+    margin-top:20px;
+    width:110px;
+    height:110px;
+    border-radius: 50%;
+}
+.skilltitle h3{
+    margin-bottom: 15px;
+    font-family: segoe print;
+    font-size:25px;
+    color:red;
+}
+/* -----------------------------------projects------------------------------ */
+.projectsection  h1{
+    padding-top:30px;
+    font-family: segoe print;
+    font-size:35px;
+    text-align: center;
+}
+.projects{
+    padding-top:50px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}    
+ .probox{
+    width:100%;
+    height:100vh;
+    padding-left: 12%;
+    display:grid;
+ }
+ .proimg{
+    width:100%;
+    position: relative;
+ }
+ .proimg img{
+    width:400px;
+    height:530px;
+ }
+ .procontent{
+    width:400px;
+    height: 530px;
+    top:0;
+    left: 0;
+    position: absolute;
+    background:rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+ }
+ .procontent:hover{
+    opacity: 1;
+ }
+ .procontent h2{
+    font-size: 30px;
+    color:#ffe100;
+    margin-bottom: 15px;
+ }
+ .procontent h4{
+    color:rgb(238, 22, 169);
+    margin-bottom:15px;
+    font-size:18px;
+ }
+ .procontent p{
+    font-size:17px;
+    color:#fff;
+ }
+ .procontent > *{
+    transform: translateY(25px);
+    transition: transform 0.6s;
+ }
+ .procontent:hover > *{
+    transform:translateY(0px);
+ }
+ /* ---------------------------------------resume----------------------------------------- */
+
+ .contactleft{
+    margin-top:-40px;
+    flex-basis: 35%;
+    margin-left:90px;
+    padding-left:150px;
+ }
+ .contactright{
+    flex-basis: 55%;
+ }
+ .contactleft p{
+    margin-top:30px;
+ }
+ .contactleft p i{
+    color:#ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+ }
+ .socialicons{
+    margin-top: 30px;
+ }
+ .socialicons a{
+    text-decoration: none;
+    font-size: 35px;
+    margin-right: 15px;
+    color:#ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+ }
+ .socialicons a:hover{
+    color:#ff004f;
+    transform: translateY(-5px);
+ }
+ .btn.btn2{
+    display: inline-block;
+    background:#ff004f;
+    text-decoration: none;
+    color:white;
+    padding:10px;
+    margin-top:30px;
+ }
+ .contactright form{
+    width: 100%;
+    margin-left: 150px;
+    margin-top: -25px;
+
+ }
+ form input,form textarea{
+    size: 100%;
+    border:0;
+    outline:none;
+    background: #262626;
+    padding:15px;
+    margin:20px 0;
+    color:#fff;
+    font-size: 28px;
+    border-radius: 6px;
+    padding-left:210px;
+ }
+ .btn.btn3{
+    display: inline-block;
+    background:#ff004f;
+    text-decoration: none;
+    color:white;
+    padding:15px;
+    padding-left:20px;
+    padding-right:20px;
+    margin-top:30px;
+    font-size: 20px;
+    margin-left: 210px;
+ }
+ .copyright{
+    width:100%;
+    text-align: center;
+    padding:25px 0;
+    background:#262626;
+    font-weight: 300px;
+    font-size: 20px;
+    margin-top: 20px;
+ }
+ 
